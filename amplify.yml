@@ -1,0 +1,17 @@
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - echo "No pre-build commands needed for static site"
+    build:
+      commands:
+        - echo "Building static portfolio website"
+        - echo "No build commands needed - static HTML/CSS site"
+  artifacts:
+    baseDirectory: /
+    files:
+      - '**/*'
+  cache:
+    paths: []
+
