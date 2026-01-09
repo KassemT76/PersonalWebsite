@@ -1,0 +1,37 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Terminal Window Icon -->
+  <defs>
+    <linearGradient id="termGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#22c55e;stop-opacity:1" />
+    </linearGradient>
+    <filter id="termGlow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Terminal Window -->
+  <rect x="30" y="40" width="140" height="120" rx="8" fill="rgba(10, 25, 26, 0.9)" stroke="url(#termGradient)" stroke-width="3"/>
+  
+  <!-- Window Controls -->
+  <circle cx="50" cy="65" r="5" fill="#ef4444"/>
+  <circle cx="70" cy="65" r="5" fill="#f59e0b"/>
+  <circle cx="90" cy="65" r="5" fill="#10b981"/>
+  
+  <!-- Terminal Content -->
+  <text x="40" y="95" font-family="monospace" font-size="12" fill="#10b981" opacity="0.9">$ git commit</text>
+  <text x="40" y="115" font-family="monospace" font-size="12" fill="#34d399">→ Deploying...</text>
+  
+  <!-- Cursor Blink -->
+  <rect x="125" y="107" width="2" height="12" fill="#10b981">
+    <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Prompt Arrow -->
+  <path d="M 40 90 L 35 95 L 40 100" stroke="#10b981" stroke-width="2" fill="none" stroke-linecap="round"/>
+</svg>
+

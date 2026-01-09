@@ -1,0 +1,30 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Code Brackets Icon with Green Theme -->
+  <defs>
+    <linearGradient id="greenGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#34d399;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#22c55e;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background Circle -->
+  <circle cx="100" cy="100" r="90" fill="url(#greenGradient)" opacity="0.2"/>
+  
+  <!-- Code Brackets -->
+  <path d="M 60 50 L 40 100 L 60 150" stroke="url(#greenGradient)" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
+  <path d="M 140 50 L 160 100 L 140 150" stroke="url(#greenGradient)" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
+  
+  <!-- Center Lines (Code Representation) -->
+  <line x1="80" y1="85" x2="120" y2="85" stroke="#10b981" stroke-width="4" stroke-linecap="round" opacity="0.8"/>
+  <line x1="85" y1="100" x2="115" y2="100" stroke="#10b981" stroke-width="4" stroke-linecap="round" opacity="0.8"/>
+  <line x1="90" y1="115" x2="110" y2="115" stroke="#10b981" stroke-width="4" stroke-linecap="round" opacity="0.8"/>
+</svg>
+
