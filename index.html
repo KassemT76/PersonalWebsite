@@ -8,694 +8,418 @@
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'G-QV0J2MXYNV');
     </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg+xml" href="logo-kt.svg">
-    <title>Kassem Taha - Software Engineer</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Kassem Taha — Software Engineer</title>
+    <meta name="description" content="Kassem Taha is a software engineer and Computer Science student at Carleton University, building full-stack products across web, cloud, and mobile.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'bg-dark': '#0a0e27',
-                        'bg-secondary': '#1a1f3a',
-                        'accent': '#00d9ff',
-                        'accent-glow': '#00d9ff33',
-                        'text-light': '#e4e4e7',
-                        'text-muted': '#a1a1aa',
-                    },
-                    fontFamily: {
-                        'outfit': ['Outfit', 'sans-serif'],
-                        'mono': ['JetBrains Mono', 'monospace'],
-                    }
-                }
-            }
-        }
-    </script>
 </head>
 
-<body class="bg-bg-dark text-text-light font-outfit overflow-x-hidden">
-    <!-- Geometric Background Elements -->
-    <div class="fixed inset-0 pointer-events-none overflow-hidden z-0">
-        <div class="geo-shape geo-hexagon" style="top: 10%; left: 5%; --delay: 0s;"></div>
-        <div class="geo-shape geo-triangle" style="top: 20%; right: 10%; --delay: 2s;"></div>
-        <div class="geo-shape geo-hexagon" style="top: 60%; left: 15%; --delay: 4s;"></div>
-        <div class="geo-shape geo-diamond" style="top: 70%; right: 20%; --delay: 1s;"></div>
-        <div class="geo-shape geo-triangle" style="top: 85%; left: 30%; --delay: 3s;"></div>
-        <div class="geo-shape geo-hexagon" style="top: 40%; right: 5%; --delay: 5s;"></div>
-        <div class="geo-grid"></div>
-    </div>
-
-    <!-- Navigation -->
-    <nav class="fixed top-4 left-4 right-4 z-50 nav-blur-floating">
-        <div class="max-w-7xl mx-auto px-6 py-4">
-            <div class="flex items-center justify-between">
-                <a href="#" class="hover:opacity-80 transition-opacity">
-                    <img src="logo-kt.svg" alt="KT Logo" class="h-10 w-auto">
-                </a>
-                <div class="hidden md:flex items-center">
-                    <a href="#about" class="nav-link-icon">
-                        <i class="fas fa-user"></i>
-                        <span class="nav-text">About</span>
-                    </a>
-                    <a href="#experience" class="nav-link-icon">
-                        <i class="fas fa-briefcase"></i>
-                        <span class="nav-text">Experience</span>
-                    </a>
-                    <a href="#projects" class="nav-link-icon">
-                        <i class="fas fa-code"></i>
-                        <span class="nav-text">Projects</span>
-                    </a>
-                    <a href="#skills" class="nav-link-icon">
-                        <i class="fas fa-cogs"></i>
-                        <span class="nav-text">Skills</span>
-                    </a>
-                    <a href="#contact" class="nav-link-icon">
-                        <i class="fas fa-paper-plane"></i>
-                        <span class="nav-text">Contact</span>
-                    </a>
-                </div>
-                <button id="mobile-menu-btn" class="md:hidden text-text-light hover:text-accent transition-colors">
-                    <i class="fas fa-bars text-xl"></i>
-                </button>
+<body>
+    <nav id="nav">
+        <div class="wrap nav-inner">
+            <a href="#" class="nav-logo"><img src="logo-kt.svg" alt="Kassem Taha"></a>
+            <div class="nav-links">
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
             </div>
+            <button id="nav-mobile-btn" class="nav-mobile-btn" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
-        <!-- Mobile Menu -->
-        <div id="mobile-menu"
-            class="hidden md:hidden bg-bg-secondary/95 backdrop-blur-lg border-t border-accent/20 rounded-b-2xl">
-            <div class="px-6 py-4 flex flex-col gap-4">
-                <a href="#about" class="nav-link-mobile">About</a>
-                <a href="#experience" class="nav-link-mobile">Experience</a>
-                <a href="#projects" class="nav-link-mobile">Projects</a>
-                <a href="#skills" class="nav-link-mobile">Skills</a>
-                <a href="#contact" class="nav-link-mobile">Contact</a>
-            </div>
+        <div id="nav-mobile-menu" class="nav-mobile-menu">
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="hero" class="min-h-screen flex items-center justify-center relative px-6">
-        <div class="hero-geo-bg"></div>
-        <div class="text-center z-10 animate-fade-in">
-            <div class="relative inline-block mb-6">
-                <div class="hero-hexagon-frame">
-                    <span class="text-accent font-mono text-sm tracking-wider">Hello, I'm</span>
-                </div>
-            </div>
-            <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 hero-title">
-                Kassem Taha
-            </h1>
-            <p class="text-lg md:text-xl text-text-muted max-w-2xl mx-auto mb-8 leading-relaxed">
-                <span class="text-accent">Computer Science Student @ Carleton</span>
-                <span class="mx-2 text-accent/50">|</span>
-                <span>Full-Stack Developer</span>
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-glow"></div>
+        <div class="wrap">
+            <h1>Kassem Taha<span class="role">Software engineer, building full‑stack products end to end.</span></h1>
+            <p class="hero-sub">
+                Third-year Computer Science student at Carleton University focused on AI/ML,
+                currently building a HIPAA-compliant healthcare platform as a founding engineer at SecondHello.
             </p>
-            <div class="flex flex-wrap items-center justify-center gap-4 mb-12">
-                <a href="#projects" class="btn-primary">
-                    <span>View My Work</span>
-                    <i class="fas fa-arrow-right ml-2"></i>
+            <div class="hero-actions">
+                <a href="#experience" class="btn btn-primary">
+                    <span>Learn more about me</span>
+                    <i class="fas fa-arrow-down"></i>
                 </a>
-                <a href="#contact" class="btn-secondary">
-                    <span>Get In Touch</span>
+                <a href="#contact" class="btn btn-secondary">
+                    <span>Get in touch</span>
                 </a>
             </div>
-            <div class="flex items-center justify-center gap-6">
-                <a href="https://github.com/KassemT76" target="_blank" rel="noopener noreferrer" class="social-icon">
+            <div class="hero-socials">
+                <a href="https://github.com/KassemT76" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub">
                     <i class="fab fa-github"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/kassem-taha-b366b422a/" target="_blank" rel="noopener noreferrer"
-                    class="social-icon">
+                <a href="https://www.linkedin.com/in/kassem-taha-b366b422a/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
                     <i class="fab fa-linkedin-in"></i>
                 </a>
-                <a href="mailto:kassemtaha06@gmail.com" class="social-icon">
+                <a href="mailto:kassemtaha06@gmail.com" class="social-icon" aria-label="Email">
                     <i class="fas fa-envelope"></i>
                 </a>
             </div>
         </div>
-        <!-- Scroll Indicator -->
-        <a href="#about" class="absolute bottom-8 left-1/2 -translate-x-1/2 scroll-indicator">
-            <div class="scroll-mouse">
-                <div class="scroll-wheel"></div>
-            </div>
-            <span class="text-xs text-text-muted mt-2 block">Scroll</span>
-        </a>
     </section>
 
-    <!-- Diagonal Divider -->
-    <div class="diagonal-divider"></div>
-
-    <!-- About Section -->
-    <section id="about" class="py-24 px-6 relative">
-        <div class="max-w-4xl mx-auto">
-            <div class="section-reveal">
-                <div class="flex items-center gap-4 mb-12">
-                    <div class="hexagon-badge">
-                        <i class="fas fa-user"></i>
-                    </div>
-                    <h2 class="section-title">About Me</h2>
-                    <div class="flex-1 h-px bg-gradient-to-r from-accent/50 to-transparent"></div>
-                </div>
-                <div class="grid md:grid-cols-3 gap-8">
-                    <div class="md:col-span-2">
-                        <p class="text-lg text-text-muted leading-relaxed mb-6">
-                            I'm a third-year <span class="text-accent">Computer Science</span> student at Carleton
-                            University,
-                            specializing in <span class="text-accent">Artificial Intelligence and Machine
-                                Learning</span>.
-                            With a CGPA of 11.33/12, I combine academic excellence with hands-on experience building
-                            scalable software solutions.
-                        </p>
-                        <p class="text-lg text-text-muted leading-relaxed">
-                            From founding a HIPAA-compliant healthcare startup to optimizing enterprise SaaS platforms,
-                            I'm passionate about solving complex problems through clean code and thoughtful
-                            architecture.
-                            Currently serving as a Teaching Assistant while continuing to build innovative projects.
-                        </p>
-                    </div>
-                    <div class="space-y-4">
-                        <div class="stat-card">
-                            <span class="stat-number">11.33</span>
-                            <span class="stat-label">/12 CGPA</span>
-                        </div>
-                        <div class="stat-card">
-                            <span class="stat-number">3+</span>
-                            <span class="stat-label">Years Experience</span>
-                        </div>
-                        <div class="stat-card">
-                            <span class="stat-number">10+</span>
-                            <span class="stat-label">Projects Built</span>
-                        </div>
-                    </div>
-                </div>
+    <!-- Experience -->
+    <section id="experience" style="background: var(--bg-alt);">
+        <div class="wrap">
+            <div class="section-head reveal">
+                <h2>Experience</h2>
             </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="py-24 px-6 bg-bg-secondary/30 relative">
-        <div class="max-w-6xl mx-auto">
-            <div class="section-reveal">
-                <div class="flex items-center gap-4 mb-12">
-                    <div class="hexagon-badge">
-                        <i class="fas fa-briefcase"></i>
+            <div class="timeline">
+                <div class="tl-item reveal">
+                    <div class="tl-date">Jan 2026 – Present</div>
+                    <div class="tl-node">
+                        <div class="tl-badge"><!-- swap for <img src="logos/secondhello.svg" alt=""> --><i class="fas fa-heartbeat"></i></div>
                     </div>
-                    <h2 class="section-title">Experience</h2>
-                    <div class="flex-1 h-px bg-gradient-to-r from-accent/50 to-transparent"></div>
+                    <div class="tl-content">
+                        <p class="tl-role">Founding Engineer</p>
+                        <p class="tl-org">SecondHello · Remote</p>
+                        <ul>
+                            <li>Developing a HIPAA-compliant healthcare platform in React and TypeScript with AWS CDK infrastructure, letting patients from 15+ clinics connect with new providers and view their records in real time.</li>
+                            <li>Built secure, role-based authentication for patients and clinics with AWS Cognito, enforcing strict access controls and encrypting data in transit.</li>
+                            <li>Designed patient and provider portals with secure file upload and a referral system across 15+ onboarded providers, cutting referral handoff time from days to minutes.</li>
+                            <li>Architected encrypted-at-rest S3 storage for medical imaging and patient documents, keeping large binary records HIPAA-compliant and retrievable on demand.</li>
+                        </ul>
+                        <div class="tag-row">
+                            <span class="tag">React</span>
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">AWS CDK</span>
+                            <span class="tag">Cognito</span>
+                            <span class="tag">S3</span>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="experience-timeline">
-                    <!-- Teaching Assistant -->
-                    <div class="experience-card section-reveal" style="--delay: 0.1s;">
-                        <div class="experience-date">
-                            <span class="font-mono text-accent">Jan 2026</span>
-                            <span class="font-mono text-accent">-</span>
-                            <span class="font-mono text-accent">April 2026</span>
-                        </div>
-                        <div class="experience-content">
-                            <div class="flex items-start justify-between flex-wrap gap-2 mb-3">
-                                <h3 class="text-xl font-semibold text-white">Teaching Assistant: Operating Systems</h3>
-                                <span class="location-badge">
-                                    <i class="fas fa-map-marker-alt mr-1"></i>Ottawa, Canada
-                                </span>
-                            </div>
-                            <p class="text-accent mb-4 font-medium">Carleton University</p>
-                            <ul class="experience-list">
-                                <li>Led weekly tutorials and held office hours for <span class="text-accent">400+</span>
-                                    students, reinforcing core OS concepts such as concurrency, memory allocation, and
-                                    file systems.</li>
-                                <li>Provided one-on-one mentorship in <span class="text-accent">C programming</span>,
-                                    debugging, and OS-level problem solving.</li>
-                                <li>Assisted in grading assignments and exams, evaluating correctness and code quality.
-                                </li>
-                            </ul>
+                <div class="tl-item reveal">
+                    <div class="tl-date">Jan – Apr 2026</div>
+                    <div class="tl-node">
+                        <div class="tl-badge"><!-- swap for <img src="logos/carleton.svg" alt=""> --><i class="fas fa-graduation-cap"></i></div>
+                    </div>
+                    <div class="tl-content">
+                        <p class="tl-role">Teaching Assistant, Operating Systems</p>
+                        <p class="tl-org">Carleton University · Ottawa, Canada</p>
+                        <ul>
+                            <li>Instructed 400+ students in tutorials, providing in-depth guidance on complex Operating Systems topics.</li>
+                            <li>Assisted in grading 500+ assignments and exams with constructive feedback on students' work.</li>
+                            <li>Held weekly office hours, mentoring students one-on-one and driving a ~20% improvement in coursework performance.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tl-item reveal">
+                    <div class="tl-date">May – Dec 2025</div>
+                    <div class="tl-node">
+                        <div class="tl-badge"><!-- swap for <img src="logos/chargeautomation.svg" alt=""> --><i class="fas fa-bolt"></i></div>
+                    </div>
+                    <div class="tl-content">
+                        <p class="tl-role">Software Engineer Intern</p>
+                        <p class="tl-org">ChargeAutomation · Toronto, Canada</p>
+                        <ul>
+                            <li>Led a performance analysis initiative, fixing N+1 database queries and large Vite bundles for a 30% LCP improvement and a 50% reduction in average API response time.</li>
+                            <li>Identified and hotfixed critical security vulnerabilities in production PHP API endpoints, safeguarding identification documents and passports for 10,000+ guests.</li>
+                            <li>Authored a report on payment gateways across the application, uncovering critical bugs in the refund and email systems and protecting $5M+ of annual revenue.</li>
+                            <li>Standardized UI across 2 services and removed 1,000+ lines of duplicated HTML/CSS by migrating to a shared design system.</li>
+                        </ul>
+                        <div class="tag-row">
+                            <span class="tag">Vue.js</span>
+                            <span class="tag">PHP</span>
+                            <span class="tag">Laravel</span>
+                            <span class="tag">Cloudflare</span>
                         </div>
                     </div>
-
-                    <!-- ChargeAutomation -->
-                    <div class="experience-card section-reveal" style="--delay: 0.2s;">
-                        <div class="experience-date">
-                            <span class="font-mono text-accent">May 2025</span>
-                            <span class="font-mono text-accent">-</span>
-                            <span class="font-mono text-accent">December 2025</span>
-                        </div>
-                        <div class="experience-content">
-                            <div class="flex items-start justify-between flex-wrap gap-2 mb-3">
-                                <h3 class="text-xl font-semibold text-white">Software Engineer Intern</h3>
-                                <span class="location-badge">
-                                    <i class="fas fa-map-marker-alt mr-1"></i>Toronto, Canada
-                                </span>
-                            </div>
-                            <p class="text-accent mb-4 font-medium">ChargeAutomation</p>
-                            <ul class="experience-list">
-                                <li>Led performance analysis across front-end and back-end, achieving <span
-                                        class="text-accent">30% improvement</span> in page load and <span
-                                        class="text-accent">50% reduction</span> in API response time.</li>
-                                <li>Identified and patched critical security vulnerabilities, safeguarding documents of
-                                    <span class="text-accent">10,000+ guests</span>.
-                                </li>
-                                <li>Implemented internationalized language detection via Cloudflare Headers for <span
-                                        class="text-accent">1000+ clients across 60+ countries</span>.</li>
-                                <li>Delivered <span class="text-accent">15+ features</span> and <span
-                                        class="text-accent">30+ bug fixes</span> using Vue.js and PHP.</li>
-                            </ul>
-                            <div class="flex flex-wrap gap-2 mt-4">
-                                <span class="tech-tag">Vue.js</span>
-                                <span class="tech-tag">PHP</span>
-                                <span class="tech-tag">Cloudflare</span>
-                                <span class="tech-tag">Laravel</span>
-                            </div>
+                </div>
+                <div class="tl-item reveal">
+                    <div class="tl-date">Jun 2024 – Jul 2025</div>
+                    <div class="tl-node">
+                        <div class="tl-badge"><!-- swap for <img src="logos/gulf-legacy.svg" alt=""> --><i class="fas fa-futbol"></i></div>
+                    </div>
+                    <div class="tl-content">
+                        <p class="tl-role">Freelance Software Engineer</p>
+                        <p class="tl-org">Gulf Legacy Football · Remote</p>
+                        <ul>
+                            <li>Engineered a fully responsive Next.js and React frontend for a UAE football league projected at 100+ players, spanning the full player-facing experience end to end.</li>
+                            <li>Designed a Firebase database managing 40+ teams, 100+ matches, and weekly schedules, and integrated Stripe to process 1,000+ dollars in secure, automated registrations.</li>
+                            <li>Implemented results and standings pages with real-time filtering, loading match outcomes and rankings in under 1 second.</li>
+                        </ul>
+                        <div class="tag-row">
+                            <span class="tag">Next.js</span>
+                            <span class="tag">React</span>
+                            <span class="tag">Firebase</span>
+                            <span class="tag">Stripe</span>
                         </div>
                     </div>
-
-                    <!-- Gulf Legacy Football -->
-                    <div class="experience-card section-reveal" style="--delay: 0.3s;">
-                        <div class="experience-date">
-                            <span class="font-mono text-accent">June 2024</span>
-                            <span class="font-mono text-accent">-</span>
-                            <span class="font-mono text-accent">July 2025</span>
-                        </div>
-                        <div class="experience-content">
-                            <div class="flex items-start justify-between flex-wrap gap-2 mb-3">
-                                <h3 class="text-xl font-semibold text-white">Freelance Software Engineer</h3>
-                                <span class="location-badge">
-                                    <i class="fas fa-globe mr-1"></i>Remote
-                                </span>
-                            </div>
-                            <p class="text-accent mb-4 font-medium">Gulf Legacy Football</p>
-                            <ul class="experience-list">
-                                <li>Developed the website for an upcoming football league with <span
-                                        class="text-accent">100+ players</span> across the UAE.</li>
-                                <li>Built entire frontend from scratch using Next.js and React with <span
-                                        class="text-accent">5+ responsive pages</span>.</li>
-                                <li>Designed Firebase database for <span class="text-accent">40+ teams</span> and <span
-                                        class="text-accent">100+ matches</span>.</li>
-                                <li>Integrated Stripe to process <span class="text-accent">+$1000</span> in transactions
-                                    for league registrations.</li>
-                            </ul>
-                            <div class="flex flex-wrap gap-2 mt-4">
-                                <span class="tech-tag">Next.js</span>
-                                <span class="tech-tag">React</span>
-                                <span class="tech-tag">Firebase</span>
-                                <span class="tech-tag">Stripe</span>
-                            </div>
-                        </div>
+                </div>
+                <div class="tl-item reveal">
+                    <div class="tl-date">Apr – Sep 2023</div>
+                    <div class="tl-node">
+                        <div class="tl-badge"><!-- swap for <img src="logos/digital-moment.svg" alt=""> --><i class="fas fa-chalkboard-user"></i></div>
                     </div>
-
-                    <!-- Digital Moment Canada -->
-                    <div class="experience-card section-reveal" style="--delay: 0.45s;">
-                        <div class="experience-date">
-                            <span class="font-mono text-accent">April 2023</span>
-                            <span class="font-mono text-accent">-</span>
-                            <span class="font-mono text-accent">September 2023</span>
-                        </div>
-                        <div class="experience-content">
-                            <div class="flex items-start justify-between flex-wrap gap-2 mb-3">
-                                <h3 class="text-xl font-semibold text-white">Instructor</h3>
-                                <span class="location-badge">
-                                    <i class="fas fa-map-marker-alt mr-1"></i>Remote · Digital Moment Canada
-                                </span>
-                            </div>
-                            <ul class="experience-list">
-                                <li>Volunteered to teach HTML and CSS to <span class="text-accent">3+ classes</span> of
-                                    <span class="text-accent">12 children</span>, fostering critical thinking and
-                                    problem-solving.
-                                </li>
-                                <li>Delivered <span class="text-accent">10+ hours</span> of hands-on coding lessons,
-                                    guiding students to build <span class="text-accent">5+</span> interactive web
-                                    projects from scratch.</li>
-                                <li>Achieved a <span class="text-accent">90% completion rate</span>, with students
-                                    showing increased confidence and coding proficiency by program's end.</li>
-                            </ul>
-                            <div class="flex flex-wrap gap-2 mt-4">
-                                <span class="tech-tag">HTML</span>
-                                <span class="tech-tag">CSS</span>
-                                <span class="tech-tag">JavaScript</span>
-                                <span class="tech-tag">Communication</span>
-                            </div>
-                        </div>
+                    <div class="tl-content">
+                        <p class="tl-role">Instructor</p>
+                        <p class="tl-org">Digital Moment Canada · Remote</p>
+                        <ul>
+                            <li>Taught HTML and CSS to children aged 9–11 through Digital Moment's volunteer coding program.</li>
+                        </ul>
                     </div>
-
-                    <!-- Robotics -->
-                    <div class="experience-card section-reveal" style="--delay: 0.5s;">
-                        <div class="experience-date">
-                            <span class="font-mono text-accent">September 2022</span>
-                            <span class="font-mono text-accent">-</span>
-                            <span class="font-mono text-accent">March 2023</span>
-                        </div>
-                        <div class="experience-content">
-                            <div class="flex items-start justify-between flex-wrap gap-2 mb-3">
-                                <h3 class="text-xl font-semibold text-white">Captain, Lead Programmer, Driver</h3>
-                                <span class="location-badge">
-                                    <i class="fas fa-map-marker-alt mr-1"></i>Mississauga, Canada
-                                </span>
-                            </div>
-                            <p class="text-accent mb-4 font-medium">4659 Warrior Robotix</p>
-                            <ul class="experience-list">
-                                <li>Led team to qualify for provincials, ranking <span class="text-accent">46th out of
-                                        200+</span> in Ontario robotics competitions.</li>
-                                <li>Spearheaded programming including Odometry, motor control, event handling, and
-                                    auto-aiming software, boosting scoring by <span class="text-accent">30%</span>.</li>
-                                <li>Won <span class="text-accent">1st place</span> in the Innovate Award category for
-                                    innovative code solutions.</li>
-                            </ul>
-                            <div class="flex flex-wrap gap-2 mt-4">
-                                <span class="tech-tag">Java</span>
-                                <span class="tech-tag">Robotics</span>
-                                <span class="tech-tag">Odometry</span>
-                            </div>
-                        </div>
+                </div>
+                <div class="tl-item reveal">
+                    <div class="tl-date">Sep 2022 – Mar 2023</div>
+                    <div class="tl-node">
+                        <div class="tl-badge"><!-- swap for <img src="logos/warrior-robotix.svg" alt=""> --><i class="fas fa-robot"></i></div>
                     </div>
-
-                    <!-- Our Wave Hub -->
-                    <div class="experience-card section-reveal" style="--delay: 0.4s;">
-                        <div class="experience-date">
-                            <span class="font-mono text-accent">June 2022</span>
-                            <span class="font-mono text-accent">-</span>
-                            <span class="font-mono text-accent">August 2022</span>
-                        </div>
-                        <div class="experience-content">
-                            <div class="flex items-start justify-between flex-wrap gap-2 mb-3">
-                                <h3 class="text-xl font-semibold text-white">Software Engineer Intern</h3>
-                                <span class="location-badge">
-                                    <i class="fas fa-map-marker-alt mr-1"></i>Toronto, Canada
-                                </span>
-                            </div>
-                            <p class="text-accent mb-4 font-medium">Our Wave Hub</p>
-                            <ul class="experience-list">
-                                <li>Developed a social iOS app supporting <span class="text-accent">300+ students</span>
-                                    using design thinking and lean startup methods.</li>
-                                <li>Built full application architecture using Swift, Xcode, and Firebase with real-time
-                                    data sync.</li>
-                                <li>Implemented social features including message posting and infinite scroll with <span
-                                        class="text-accent">&lt; 1s</span> response times.</li>
-                            </ul>
-                            <div class="flex flex-wrap gap-2 mt-4">
-                                <span class="tech-tag">Swift</span>
-                                <span class="tech-tag">Xcode</span>
-                                <span class="tech-tag">Firebase</span>
-                                <span class="tech-tag">iOS</span>
-                            </div>
-                        </div>
+                    <div class="tl-content">
+                        <p class="tl-role">Captain, Lead Programmer, Driver</p>
+                        <p class="tl-org">4659 Warrior Robotix · Mississauga, Canada</p>
+                        <ul>
+                            <li>Spearheaded programming for odometry, motor control, event handling, and auto-aim software, boosting scoring by 30%.</li>
+                            <li>Drove the robot in competitions and coached teammates through strategy.</li>
+                            <li>Led a rookie team to provincials, ranking 46th out of 200+, while winning the 1st-place Innovate Award.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tl-item reveal">
+                    <div class="tl-date">Jun – Aug 2022</div>
+                    <div class="tl-node">
+                        <div class="tl-badge"><!-- swap for <img src="logos/our-wave-hub.svg" alt=""> --><i class="fas fa-mobile-screen"></i></div>
+                    </div>
+                    <div class="tl-content">
+                        <p class="tl-role">iOS Developer</p>
+                        <p class="tl-org">Our Wave Hub · Toronto, Canada</p>
+                        <ul>
+                            <li>Developed the app architecture in Swift and Xcode with a Firebase backend, connecting 300+ students.</li>
+                            <li>Implemented real-time sync and social features like posting and infinite scroll.</li>
+                            <li>Applied design thinking and lean startup methods to deliver a user-focused product.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="py-24 px-6 relative">
-        <div class="max-w-6xl mx-auto">
-            <div class="section-reveal">
-                <div class="flex items-center gap-4 mb-12">
-                    <div class="hexagon-badge">
-                        <i class="fas fa-code"></i>
+    <!-- Projects -->
+    <section id="projects">
+        <div class="wrap">
+            <div class="section-head reveal">
+                <h2>Projects</h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card reveal">
+                    <div class="project-icon"><i class="fas fa-network-wired"></i></div>
+                    <h3>Squire <a href="https://github.com/rayhaanfarooq/Squire" target="_blank" rel="noopener noreferrer" aria-label="View Squire on GitHub"><i class="fab fa-github"></i></a></h3>
+                    <p>
+                        A distributed, event-driven platform coordinating five specialized agents over Solace PubSub+
+                        to analyze GitHub PRs, meeting notes, and team feedback in parallel, generating executive reports.
+                        Includes Python/FastAPI agents that extract code changes and assess complexity and risk from PR diffs.
+                    </p>
+                    <div class="tag-row">
+                        <span class="tag">Python</span>
+                        <span class="tag">FastAPI</span>
+                        <span class="tag">React</span>
+                        <span class="tag">TypeScript</span>
+                        <span class="tag">Solace PubSub+</span>
                     </div>
-                    <h2 class="section-title">Featured Projects</h2>
-                    <div class="flex-1 h-px bg-gradient-to-r from-accent/50 to-transparent"></div>
                 </div>
-
-                <div class="projects-grid">
-                    <!-- SecondHello -->
-                    <div class="project-card section-reveal" style="--delay: 0.1s;">
-                        <div class="project-image">
-                            <div class="project-placeholder">
-                                <i class="fas fa-heartbeat text-4xl text-accent"></i>
-                            </div>
-                            <div class="project-overlay">
-                                <div class="flex gap-4">
-                                    <a href="https://secondhello.com/" target="_blank" rel="noopener noreferrer"
-                                        class="project-link">
-                                        <i class="fas fa-external-link-alt"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-info">
-                            <h3 class="text-xl font-semibold text-white mb-2">SecondHello</h3>
-                            <p class="text-text-muted mb-4 text-sm leading-relaxed">
-                                Building a HIPAA-compliant healthcare platform enabling secure patient-provider
-                                interactions
-                                and medical record management for dental practices. Successfully onboarded 5+ pilot
-                                clinics.
-                            </p>
-                            <div class="flex flex-wrap gap-2">
-                                <span class="tech-tag-sm">React</span>
-                                <span class="tech-tag-sm">TypeScript</span>
-                                <span class="tech-tag-sm">AWS Lambda</span>
-                                <span class="tech-tag-sm">DynamoDB</span>
-                                <span class="tech-tag-sm">Cognito</span>
-                                <span class="tech-tag-sm">S3</span>
-                            </div>
-                        </div>
+                <div class="project-card reveal">
+                    <div class="project-icon"><i class="fas fa-magnifying-glass"></i></div>
+                    <h3>Web Crawler and Search Engine</h3>
+                    <p>
+                        A high-performance web crawler in Java and Python that indexes 1,000+ webpages in under 2
+                        minutes, paired with a search engine that ranks results using a hybrid of PageRank authority
+                        scores and TF-IDF cosine similarity, returning relevant results in under 2 seconds.
+                    </p>
+                    <div class="tag-row">
+                        <span class="tag">Java</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">JavaFX</span>
                     </div>
-
-                    <!-- Squire -->
-                    <div class="project-card section-reveal" style="--delay: 0.2s;">
-                        <div class="project-image">
-                            <div class="project-placeholder">
-                                <i class="fas fa-network-wired text-4xl text-accent"></i>
-                            </div>
-                            <div class="project-overlay">
-                                <div class="flex gap-4">
-                                    <a href="https://github.com/rayhaanfarooq/Squire" target="_blank"
-                                        rel="noopener noreferrer" class="project-link">
-                                        <i class="fab fa-github"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-info">
-                            <h3 class="text-xl font-semibold text-white mb-2">Squire</h3>
-                            <p class="text-text-muted mb-4 text-sm leading-relaxed">
-                                Architected a distributed, event-driven platform using Solace PubSub+ messaging,
-                                coordinating 5+ specialized agents to analyze GitHub PRs, meeting documents, and team
-                                feedback.
-                            </p>
-                            <div class="flex flex-wrap gap-2">
-                                <span class="tech-tag-sm">Python</span>
-                                <span class="tech-tag-sm">FastAPI</span>
-                                <span class="tech-tag-sm">React</span>
-                                <span class="tech-tag-sm">TypeScript</span>
-                                <span class="tech-tag-sm">Solace PubSub+</span>
-                            </div>
-                        </div>
+                </div>
+                <div class="project-card reveal">
+                    <div class="project-icon"><i class="fas fa-route"></i></div>
+                    <h3>Graph Pathfinder <a href="https://github.com/KassemT76/Graph-Pathfinder" target="_blank" rel="noopener noreferrer" aria-label="View Graph Pathfinder on GitHub"><i class="fab fa-github"></i></a></h3>
+                    <p>
+                        A C program that generates 2–2,000 vertices, matches each to its 1–25 closest neighbours,
+                        and renders the resulting graph with the X11 library in under a second — tuned for zero
+                        memory leaks and an efficient nearest-neighbour time complexity.
+                    </p>
+                    <div class="tag-row">
+                        <span class="tag">C</span>
+                        <span class="tag">X11</span>
+                    </div>
+                </div>
+                <div class="project-card reveal">
+                    <div class="project-icon"><i class="fas fa-users"></i></div>
+                    <h3>Acadamate <a href="https://github.com/KassemT76/coopProject" target="_blank" rel="noopener noreferrer" aria-label="View Acadamate on GitHub"><i class="fab fa-github"></i></a></h3>
+                    <p>
+                        An iOS social app connecting students to collaborate academically, with Swift and Firebase
+                        powering core social features like message posting and infinite scroll.
+                    </p>
+                    <div class="tag-row">
+                        <span class="tag">Swift</span>
+                        <span class="tag">Xcode</span>
+                        <span class="tag">Firebase</span>
+                    </div>
+                </div>
+                <div class="project-card reveal">
+                    <div class="project-icon"><i class="fas fa-syringe"></i></div>
+                    <h3>Insulin Pump Simulation <a href="https://github.com/KassemT76/COMP3004Team58Project" target="_blank" rel="noopener noreferrer" aria-label="View Insulin Pump Simulation on GitHub"><i class="fab fa-github"></i></a></h3>
+                    <p>
+                        A group-built simulation of the Tandem t:slim X2 insulin pump, letting users safely explore
+                        the device's behavior without real-world risk — configurable basal rates and bolus doses,
+                        usage monitoring with critical/low-insulin alerts, validation checks against bad configurations,
+                        and activity logging for later review.
+                    </p>
+                    <div class="tag-row">
+                        <span class="tag">C++</span>
+                        <span class="tag">Qt</span>
+                        <span class="tag">Qt Charts</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="py-24 px-6 bg-bg-secondary/30 relative">
-        <div class="max-w-6xl mx-auto">
-            <div class="section-reveal">
-                <div class="flex items-center gap-4 mb-12">
-                    <div class="hexagon-badge">
-                        <i class="fas fa-cogs"></i>
-                    </div>
-                    <h2 class="section-title">Skills & Technologies</h2>
-                    <div class="flex-1 h-px bg-gradient-to-r from-accent/50 to-transparent"></div>
-                </div>
-
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Languages -->
-                    <div class="skill-category section-reveal" style="--delay: 0.1s;">
-                        <h3 class="skill-category-title">
-                            <i class="fas fa-code mr-2"></i>Languages
-                        </h3>
-                        <div class="skill-hexagon-grid">
-                            <div class="skill-hexagon"><span>Java</span></div>
-                            <div class="skill-hexagon"><span>Python</span></div>
-                            <div class="skill-hexagon"><span>C++</span></div>
-                            <div class="skill-hexagon"><span>C</span></div>
-                            <div class="skill-hexagon"><span>JavaScript</span></div>
-                            <div class="skill-hexagon"><span>TypeScript</span></div>
-                            <div class="skill-hexagon"><span>PHP</span></div>
-                            <div class="skill-hexagon"><span>Swift</span></div>
-                        </div>
-                    </div>
-
-                    <!-- Frontend -->
-                    <div class="skill-category section-reveal" style="--delay: 0.2s;">
-                        <h3 class="skill-category-title">
-                            <i class="fas fa-palette mr-2"></i>Frontend
-                        </h3>
-                        <div class="skill-hexagon-grid">
-                            <div class="skill-hexagon"><span>React</span></div>
-                            <div class="skill-hexagon"><span>Vue.js</span></div>
-                            <div class="skill-hexagon"><span>Next.js</span></div>
-                            <div class="skill-hexagon"><span>Tailwind</span></div>
-                            <div class="skill-hexagon"><span>HTML/CSS</span></div>
-                        </div>
-                    </div>
-
-                    <!-- Backend -->
-                    <div class="skill-category section-reveal" style="--delay: 0.3s;">
-                        <h3 class="skill-category-title">
-                            <i class="fas fa-server mr-2"></i>Backend
-                        </h3>
-                        <div class="skill-hexagon-grid">
-                            <div class="skill-hexagon"><span>Node.js</span></div>
-                            <div class="skill-hexagon"><span>Laravel</span></div>
-                            <div class="skill-hexagon"><span>FastAPI</span></div>
-                            <div class="skill-hexagon"><span>PHP</span></div>
-                        </div>
-                    </div>
-
-                    <!-- Cloud/DevOps -->
-                    <div class="skill-category section-reveal" style="--delay: 0.4s;">
-                        <h3 class="skill-category-title">
-                            <i class="fas fa-cloud mr-2"></i>Cloud / DevOps
-                        </h3>
-                        <div class="skill-hexagon-grid">
-                            <div class="skill-hexagon"><span>AWS</span></div>
-                            <div class="skill-hexagon"><span>Lambda</span></div>
-                            <div class="skill-hexagon"><span>DynamoDB</span></div>
-                            <div class="skill-hexagon"><span>Docker</span></div>
-                            <div class="skill-hexagon"><span>Firebase</span></div>
-                            <div class="skill-hexagon"><span>Cloudflare</span></div>
-                        </div>
-                    </div>
-
-                    <!-- Tools -->
-                    <div class="skill-category section-reveal" style="--delay: 0.5s;">
-                        <h3 class="skill-category-title">
-                            <i class="fas fa-tools mr-2"></i>Tools
-                        </h3>
-                        <div class="skill-hexagon-grid">
-                            <div class="skill-hexagon"><span>Git</span></div>
-                            <div class="skill-hexagon"><span>Linux</span></div>
-                            <div class="skill-hexagon"><span>SQL</span></div>
-                            <div class="skill-hexagon"><span>Stripe</span></div>
-                        </div>
-                    </div>
-
-                    <!-- Databases -->
-                    <div class="skill-category section-reveal" style="--delay: 0.6s;">
-                        <h3 class="skill-category-title">
-                            <i class="fas fa-database mr-2"></i>Databases
-                        </h3>
-                        <div class="skill-hexagon-grid">
-                            <div class="skill-hexagon"><span>PostgreSQL</span></div>
-                            <div class="skill-hexagon"><span>DynamoDB</span></div>
-                            <div class="skill-hexagon"><span>Firebase</span></div>
-                            <div class="skill-hexagon"><span>MySQL</span></div>
-                        </div>
-                    </div>
-                </div>
+    <!-- About -->
+    <section id="about">
+        <div class="wrap">
+            <div class="section-head reveal">
+                <h2>About</h2>
             </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-24 px-6 relative">
-        <div class="max-w-4xl mx-auto text-center">
-            <div class="section-reveal">
-                <div class="flex items-center justify-center gap-4 mb-12">
-                    <div class="flex-1 h-px bg-gradient-to-l from-accent/50 to-transparent"></div>
-                    <div class="hexagon-badge">
-                        <i class="fas fa-paper-plane"></i>
-                    </div>
-                    <h2 class="section-title">Get In Touch</h2>
-                    <div class="flex-1 h-px bg-gradient-to-r from-accent/50 to-transparent"></div>
-                </div>
-
-                <p class="text-lg text-text-muted mb-12 max-w-2xl mx-auto">
-                    I'm always interested in new opportunities, collaborations, or just a friendly chat about
-                    technology.
-                    Feel free to reach out!
+            <div class="about-grid reveal">
+                <p>
+                    I'm a third-year Computer Science student at Carleton University, in the Artificial Intelligence
+                    and Machine Learning stream, expecting to graduate in April 2028. I've spent the last few years
+                    moving between founding a healthcare startup, interning at a fast-growing SaaS company, and
+                    freelancing — I like projects where I own a problem end to end, from architecture to the last
+                    bug fix.
                 </p>
-
-                <div class="grid sm:grid-cols-2 gap-6 mb-12 max-w-xl mx-auto">
-                    <a href="mailto:kassemtaha06@gmail.com" class="contact-card">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <span class="text-sm text-text-muted">Email</span>
-                        <span class="text-white font-medium text-sm">kassemtaha06@gmail.com</span>
-                    </a>
-                    <a href="mailto :+1-647-806-4618" class="contact-card">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <span class="text-sm text-text-muted">Phone</span>
-                        <span class="text-white font-medium">+1 647 806 4618</span>
-                    </a>
+                <div class="stats">
+                    <div class="stat">
+                        <span class="stat-num">10.83</span>
+                        <span class="stat-label">/12 CGPA</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-num">3+</span>
+                        <span class="stat-label">Years experience</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-num">10+</span>
+                        <span class="stat-label">Projects built</span>
+                    </div>
                 </div>
+            </div>
 
-                <div class="flex items-center justify-center gap-6">
-                    <a href="https://github.com/KassemT76" target="_blank" rel="noopener noreferrer"
-                        class="social-icon-lg">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/kassem-taha-b366b422a/" target="_blank"
-                        rel="noopener noreferrer" class="social-icon-lg">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="https://kassemtaha.com" target="_blank" rel="noopener noreferrer" class="social-icon-lg">
-                        <i class="fas fa-globe"></i>
-                    </a>
+            <div class="edu-card reveal" style="margin-top: 40px;">
+                <div class="edu-head">
+                    <h3>Bachelor of Computer Science Honours</h3>
+                    <span class="edu-date mono">Expected Apr 2028</span>
+                </div>
+                <p class="edu-org">Carleton University — Artificial Intelligence &amp; Machine Learning stream</p>
+                <div class="tag-row">
+                    <span class="tag">E.W.R. Steacie Scholar Award</span>
+                    <span class="tag">Lester B. Pearson Award</span>
+                    <span class="tag">President's Scholar</span>
+                </div>
+            </div>
+
+            <div class="skills-groups reveal" style="margin-top: 40px;">
+                <div class="skills-row">
+                    <span class="cat">Languages</span>
+                    <span class="pill">Java</span><span class="pill">Python</span><span class="pill">C++</span>
+                    <span class="pill">C</span><span class="pill">JavaScript</span><span class="pill">TypeScript</span>
+                    <span class="pill">PHP</span><span class="pill">Swift</span>
+                </div>
+                <div class="skills-row">
+                    <span class="cat">Frontend</span>
+                    <span class="pill">React</span><span class="pill">Vue</span><span class="pill">HTML/CSS</span>
+                    <span class="pill">Tailwind</span>
+                </div>
+                <div class="skills-row">
+                    <span class="cat">Backend</span>
+                    <span class="pill">Node.js</span><span class="pill">Laravel</span><span class="pill">FastAPI</span>
+                </div>
+                <div class="skills-row">
+                    <span class="cat">Cloud & tools</span>
+                    <span class="pill">AWS</span><span class="pill">Docker</span><span class="pill">Firebase</span>
+                    <span class="pill">Cloudflare</span><span class="pill">SQL</span><span class="pill">Git</span>
+                    <span class="pill">Linux</span><span class="pill">Stripe</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="py-8 px-6 border-t border-accent/10">
-        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
-            <p class="text-text-muted text-sm">
-                &copy; <span id="current-year"></span> Kassem Taha. Crafted with precision.
+    <!-- Contact -->
+    <section id="contact" class="contact-section" style="background: var(--bg-alt);">
+        <div class="wrap-narrow">
+            <div class="section-head reveal">
+                <h2>Get in touch</h2>
+            </div>
+            <p class="lead reveal">
+                I'm open to new grad roles, internships, and interesting freelance work. The fastest way to reach
+                me is email.
             </p>
-            <p class="text-text-muted text-sm font-mono">
-                &lt;/&gt; with <span class="text-accent">♥</span>
-            </p>
+            <div class="contact-actions reveal">
+                <a href="mailto:kassemtaha06@gmail.com" class="btn btn-primary">
+                    <i class="fas fa-envelope"></i>
+                    <span>kassemtaha06@gmail.com</span>
+                </a>
+            </div>
+            <div class="hero-socials reveal" style="justify-content: center; display: flex;">
+                <a href="https://github.com/KassemT76" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/kassem-taha-b366b422a/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="wrap footer-inner">
+            <span>&copy; <span id="current-year"></span> Kassem Taha</span>
+            <span class="mono">kassemtaha.com</span>
         </div>
     </footer>
 
     <script>
-        // Set current year
         document.getElementById('current-year').textContent = new Date().getFullYear();
 
-        // Mobile menu toggle
-        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-
-        mobileMenuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-            const icon = mobileMenuBtn.querySelector('i');
+        const navBtn = document.getElementById('nav-mobile-btn');
+        const navMenu = document.getElementById('nav-mobile-menu');
+        navBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('open');
+            const icon = navBtn.querySelector('i');
             icon.classList.toggle('fa-bars');
             icon.classList.toggle('fa-times');
         });
-
-        // Close mobile menu on link click
-        document.querySelectorAll('.nav-link-mobile').forEach(link => {
+        navMenu.querySelectorAll('a').forEach(link => {
             link.addEventListener('click', () => {
-                mobileMenu.classList.add('hidden');
-                const icon = mobileMenuBtn.querySelector('i');
-                icon.classList.add('fa-bars');
-                icon.classList.remove('fa-times');
+                navMenu.classList.remove('open');
+                navBtn.querySelector('i').classList.add('fa-bars');
+                navBtn.querySelector('i').classList.remove('fa-times');
             });
         });
 
-        // Intersection Observer for scroll animations
-        const observerOptions = {
-            root: null,
-            rootMargin: '0px',
-            threshold: 0.1
-        };
+        const nav = document.getElementById('nav');
+        window.addEventListener('scroll', () => {
+            nav.classList.toggle('nav-scrolled', window.scrollY > 20);
+        });
 
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
@@ -704,50 +428,17 @@
                     observer.unobserve(entry.target);
                 }
             });
-        }, observerOptions);
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-        document.querySelectorAll('.section-reveal').forEach(el => {
-            observer.observe(el);
-        });
-
-        // Smooth scroll for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
-                e.preventDefault();
                 const target = document.querySelector(this.getAttribute('href'));
                 if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
+                    e.preventDefault();
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 }
             });
-        });
-
-        // Parallax effect for geometric shapes
-        let ticking = false;
-        window.addEventListener('scroll', () => {
-            if (!ticking) {
-                window.requestAnimationFrame(() => {
-                    const scrolled = window.pageYOffset;
-                    document.querySelectorAll('.geo-shape').forEach((shape, index) => {
-                        const speed = 0.02 + (index * 0.01);
-                        shape.style.transform = `translateY(${scrolled * speed}px)`;
-                    });
-                    ticking = false;
-                });
-                ticking = true;
-            }
-        });
-
-        // Navbar scroll effect
-        const nav = document.querySelector('nav');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
-                nav.classList.add('nav-scrolled');
-            } else {
-                nav.classList.remove('nav-scrolled');
-            }
         });
     </script>
 </body>

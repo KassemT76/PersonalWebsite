@@ -5,7 +5,7 @@
       .logo-text {
         font-family: 'Pacifico', cursive;
         font-size: 28px;
-        fill: #00d9ff;
+        fill: #5b63d3;
       }
     </style>
   </defs>
