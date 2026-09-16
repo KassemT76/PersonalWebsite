@@ -19,35 +19,43 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <nav id="nav">
         <div class="wrap nav-inner">
-            <a href="#" class="nav-logo"><img src="logo-kt.svg" alt="Kassem Taha"></a>
+            <a href="#" class="nav-logo">Kassem Taha</a>
             <div class="nav-links">
-                <a href="#experience" class="nav-link">Experience</a>
-                <a href="#projects" class="nav-link">Projects</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#contact" class="nav-link">Contact</a>
+                <a href="#about" class="nav-link"><i class="fas fa-user"></i>About</a>
+                <a href="#skills" class="nav-link"><i class="fas fa-layer-group"></i>Skills</a>
+                <a href="#experience" class="nav-link"><i class="fas fa-briefcase"></i>Experience</a>
+                <a href="#extracurricular" class="nav-link"><i class="fas fa-users"></i>Extracurricular</a>
+                <a href="#projects" class="nav-link"><i class="fas fa-diagram-project"></i>Projects</a>
+                <a href="#education" class="nav-link"><i class="fas fa-graduation-cap"></i>Education</a>
+                <a href="#contact" class="nav-link"><i class="fas fa-paper-plane"></i>Contact</a>
             </div>
             <button id="nav-mobile-btn" class="nav-mobile-btn" aria-label="Toggle menu">
                 <i class="fas fa-bars"></i>
             </button>
         </div>
         <div id="nav-mobile-menu" class="nav-mobile-menu">
-            <a href="#experience">Experience</a>
-            <a href="#projects">Projects</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
+            <a href="#about"><i class="fas fa-user"></i>About</a>
+            <a href="#skills"><i class="fas fa-layer-group"></i>Skills</a>
+            <a href="#experience"><i class="fas fa-briefcase"></i>Experience</a>
+            <a href="#extracurricular"><i class="fas fa-users"></i>Extracurricular</a>
+            <a href="#projects"><i class="fas fa-diagram-project"></i>Projects</a>
+            <a href="#education"><i class="fas fa-graduation-cap"></i>Education</a>
+            <a href="#contact"><i class="fas fa-paper-plane"></i>Contact</a>
         </div>
     </nav>
 
     <!-- Hero -->
     <section class="hero">
         <div class="hero-glow"></div>
+        <div class="hero-watermark" aria-hidden="true">KT</div>
+        <div class="hero-dots" aria-hidden="true"></div>
         <div class="wrap">
             <h1>Kassem Taha<span class="role">Software engineer, building full‑stack products end to end.</span></h1>
             <p class="hero-sub">
@@ -55,7 +63,7 @@
                 currently building a HIPAA-compliant healthcare platform as a founding engineer at SecondHello.
             </p>
             <div class="hero-actions">
-                <a href="#experience" class="btn btn-primary">
+                <a href="#about" class="btn btn-primary">
                     <span>Learn more about me</span>
                     <i class="fas fa-arrow-down"></i>
                 </a>
@@ -77,17 +85,92 @@
         </div>
     </section>
 
-    <!-- Experience -->
-    <section id="experience" style="background: var(--bg-alt);">
+    <!-- About -->
+    <section id="about" style="background: var(--bg-alt);">
+        <i class="fas fa-user section-watermark side-right" aria-hidden="true"></i>
         <div class="wrap">
             <div class="section-head reveal">
+                <span class="icon-seal"><i class="fas fa-user"></i></span>
+                <h2>About</h2>
+            </div>
+            <div class="about-grid reveal">
+                <p>
+                    I'm an undergraduate Computer Science student at Carleton University, on co-op and specializing
+                    in Artificial Intelligence and Machine Learning. I've spent the last few years moving between
+                    founding a healthcare startup, interning at a fast-growing SaaS company, and freelancing — I
+                    like projects where I own a problem end to end, from architecture to the last bug fix.
+                </p>
+                <div class="stats">
+                    <div class="stat">
+                        <span class="stat-num">10.83</span>
+                        <span class="stat-label">/12 CGPA</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-num">3+</span>
+                        <span class="stat-label">Years experience</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-num">10+</span>
+                        <span class="stat-label">Projects built</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Skills -->
+    <section id="skills">
+        <i class="fas fa-layer-group section-watermark side-left" aria-hidden="true"></i>
+        <div class="wrap">
+            <div class="section-head reveal">
+                <span class="icon-seal"><i class="fas fa-layer-group"></i></span>
+                <h2>Skills</h2>
+            </div>
+            <div class="skills-groups reveal">
+                <div class="skills-row">
+                    <span class="cat">Languages</span>
+                    <div class="pills">
+                        <span class="pill">Java</span><span class="pill">Python</span><span class="pill">C++</span>
+                        <span class="pill">C</span><span class="pill">JavaScript</span><span class="pill">TypeScript</span>
+                        <span class="pill">PHP</span><span class="pill">Swift</span>
+                    </div>
+                </div>
+                <div class="skills-row">
+                    <span class="cat">Frontend</span>
+                    <div class="pills">
+                        <span class="pill">React</span><span class="pill">Vue</span><span class="pill">HTML/CSS</span>
+                        <span class="pill">Tailwind</span>
+                    </div>
+                </div>
+                <div class="skills-row">
+                    <span class="cat">Backend</span>
+                    <div class="pills">
+                        <span class="pill">Node.js</span><span class="pill">Laravel</span><span class="pill">FastAPI</span>
+                    </div>
+                </div>
+                <div class="skills-row">
+                    <span class="cat">Cloud & tools</span>
+                    <div class="pills">
+                        <span class="pill">AWS</span><span class="pill">Docker</span><span class="pill">Firebase</span>
+                        <span class="pill">Cloudflare</span><span class="pill">SQL</span><span class="pill">Git</span>
+                        <span class="pill">Linux</span><span class="pill">Stripe</span><span class="pill">Discord API</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Experience -->
+    <section id="experience" style="background: var(--bg-alt);">
+        <i class="fas fa-briefcase section-watermark side-right" aria-hidden="true"></i>
+        <div class="wrap">
+            <div class="section-head reveal">
+                <span class="icon-seal"><i class="fas fa-briefcase"></i></span>
                 <h2>Experience</h2>
             </div>
             <div class="timeline">
                 <div class="tl-item reveal">
-                    <div class="tl-date">Jan 2026 – Present</div>
+                    <div class="tl-date">January 2026 – Present</div>
                     <div class="tl-node">
-                        <div class="tl-badge"><!-- swap for <img src="logos/secondhello.svg" alt=""> --><i class="fas fa-heartbeat"></i></div>
+                        <div class="tl-badge"><img src="secondhello.png" alt="SecondHello"></div>
                     </div>
                     <div class="tl-content">
                         <p class="tl-role">Founding Engineer</p>
@@ -108,24 +191,28 @@
                     </div>
                 </div>
                 <div class="tl-item reveal">
-                    <div class="tl-date">Jan – Apr 2026</div>
+                    <div class="tl-date">January – April 2026</div>
                     <div class="tl-node">
-                        <div class="tl-badge"><!-- swap for <img src="logos/carleton.svg" alt=""> --><i class="fas fa-graduation-cap"></i></div>
+                        <div class="tl-badge" style="--badge-pad: 3px;"><img class="carleton-img" src="carleton.webp" alt="Carleton University"></div>
                     </div>
                     <div class="tl-content">
-                        <p class="tl-role">Teaching Assistant, Operating Systems</p>
+                        <p class="tl-role">Teaching Assistant</p>
                         <p class="tl-org">Carleton University · Ottawa, Canada</p>
                         <ul>
                             <li>Instructed 400+ students in tutorials, providing in-depth guidance on complex Operating Systems topics.</li>
-                            <li>Assisted in grading 500+ assignments and exams with constructive feedback on students' work.</li>
+                            <li>Built Python scripts to automatically compile, run, and evaluate student C submissions against test cases, speeding up grading turnaround across 500+ assignments and exams.</li>
                             <li>Held weekly office hours, mentoring students one-on-one and driving a ~20% improvement in coursework performance.</li>
                         </ul>
+                        <div class="tag-row">
+                            <span class="tag">C</span>
+                            <span class="tag">Python</span>
+                        </div>
                     </div>
                 </div>
                 <div class="tl-item reveal">
-                    <div class="tl-date">May – Dec 2025</div>
+                    <div class="tl-date">May 2025 – December 2025</div>
                     <div class="tl-node">
-                        <div class="tl-badge"><!-- swap for <img src="logos/chargeautomation.svg" alt=""> --><i class="fas fa-bolt"></i></div>
+                        <div class="tl-badge" style="--badge-pad: 1px;"><img src="chargeautomation.png" alt="ChargeAutomation"></div>
                     </div>
                     <div class="tl-content">
                         <p class="tl-role">Software Engineer Intern</p>
@@ -145,7 +232,7 @@
                     </div>
                 </div>
                 <div class="tl-item reveal">
-                    <div class="tl-date">Jun 2024 – Jul 2025</div>
+                    <div class="tl-date">June 2024 – July 2025</div>
                     <div class="tl-node">
                         <div class="tl-badge"><!-- swap for <img src="logos/gulf-legacy.svg" alt=""> --><i class="fas fa-futbol"></i></div>
                     </div>
@@ -166,37 +253,9 @@
                     </div>
                 </div>
                 <div class="tl-item reveal">
-                    <div class="tl-date">Apr – Sep 2023</div>
+                    <div class="tl-date">June – August 2022</div>
                     <div class="tl-node">
-                        <div class="tl-badge"><!-- swap for <img src="logos/digital-moment.svg" alt=""> --><i class="fas fa-chalkboard-user"></i></div>
-                    </div>
-                    <div class="tl-content">
-                        <p class="tl-role">Instructor</p>
-                        <p class="tl-org">Digital Moment Canada · Remote</p>
-                        <ul>
-                            <li>Taught HTML and CSS to children aged 9–11 through Digital Moment's volunteer coding program.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="tl-item reveal">
-                    <div class="tl-date">Sep 2022 – Mar 2023</div>
-                    <div class="tl-node">
-                        <div class="tl-badge"><!-- swap for <img src="logos/warrior-robotix.svg" alt=""> --><i class="fas fa-robot"></i></div>
-                    </div>
-                    <div class="tl-content">
-                        <p class="tl-role">Captain, Lead Programmer, Driver</p>
-                        <p class="tl-org">4659 Warrior Robotix · Mississauga, Canada</p>
-                        <ul>
-                            <li>Spearheaded programming for odometry, motor control, event handling, and auto-aim software, boosting scoring by 30%.</li>
-                            <li>Drove the robot in competitions and coached teammates through strategy.</li>
-                            <li>Led a rookie team to provincials, ranking 46th out of 200+, while winning the 1st-place Innovate Award.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="tl-item reveal">
-                    <div class="tl-date">Jun – Aug 2022</div>
-                    <div class="tl-node">
-                        <div class="tl-badge"><!-- swap for <img src="logos/our-wave-hub.svg" alt=""> --><i class="fas fa-mobile-screen"></i></div>
+                        <div class="tl-badge"><img src="ourwavehub_logo.jpg" alt="Our Wave Hub"></div>
                     </div>
                     <div class="tl-content">
                         <p class="tl-role">iOS Developer</p>
@@ -206,16 +265,80 @@
                             <li>Implemented real-time sync and social features like posting and infinite scroll.</li>
                             <li>Applied design thinking and lean startup methods to deliver a user-focused product.</li>
                         </ul>
+                        <div class="tag-row">
+                            <span class="tag">Swift</span>
+                            <span class="tag">Xcode</span>
+                            <span class="tag">Firebase</span>
+                            <span class="tag">Google Cloud</span>
+                            <span class="tag">Entrepreneurship</span>
+                            <span class="tag">Design Thinking</span>
+                            <span class="tag">User Research</span>
+                            <span class="tag">User Testing</span>
+                            <span class="tag">User Feedback</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Projects -->
-    <section id="projects">
+    <!-- Extracurricular -->
+    <section id="extracurricular">
+        <i class="fas fa-users section-watermark side-left" aria-hidden="true"></i>
         <div class="wrap">
             <div class="section-head reveal">
+                <span class="icon-seal"><i class="fas fa-users"></i></span>
+                <h2>Extracurricular</h2>
+            </div>
+            <div class="timeline">
+                <div class="tl-item reveal">
+                    <div class="tl-date">April – September 2023</div>
+                    <div class="tl-node">
+                        <div class="tl-badge"><img src="digitalmoment.jpg" alt="Digital Moment Canada" style="border-radius: 6px;"></div>
+                    </div>
+                    <div class="tl-content">
+                        <p class="tl-role">Instructor</p>
+                        <p class="tl-org">Digital Moment Canada · Remote</p>
+                        <ul>
+                            <li>Taught HTML and CSS to children aged 9–11 through Digital Moment's volunteer coding program.</li>
+                            <li>Communicated programming concepts to young learners so they grasped the material effectively, building their confidence and coding proficiency by the program's end.</li>
+                        </ul>
+                        <div class="tag-row">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tl-item reveal">
+                    <div class="tl-date">September 2022 – March 2023</div>
+                    <div class="tl-node">
+                        <div class="tl-badge"><img src="robot.png" alt="4659 Warrior Robotix"></div>
+                    </div>
+                    <div class="tl-content">
+                        <p class="tl-role">Captain, Lead Programmer, Driver</p>
+                        <p class="tl-org">4659 Warrior Robotix · Mississauga, Canada</p>
+                        <ul>
+                            <li>Spearheaded programming for odometry, motor control, event handling, and auto-aim software, boosting scoring by 30%.</li>
+                            <li>Drove the robot in competitions and coached teammates through strategy.</li>
+                            <li>Led a rookie team to provincials, ranking 46th out of 200+, while winning the 1st-place Innovate Award.</li>
+                        </ul>
+                        <div class="tag-row">
+                            <span class="tag">C</span>
+                            <span class="tag">C++</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Hardware</span>
+                            <span class="tag">Robotics</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Projects -->
+    <section id="projects" style="background: var(--bg-alt);">
+        <i class="fas fa-diagram-project section-watermark side-right" aria-hidden="true"></i>
+        <div class="wrap">
+            <div class="section-head reveal">
+                <span class="icon-seal"><i class="fas fa-diagram-project"></i></span>
                 <h2>Projects</h2>
             </div>
             <div class="projects-grid">
@@ -293,85 +416,55 @@
             </div>
         </div>
     </section>
-
-    <!-- About -->
-    <section id="about">
+    <!-- Education -->
+    <section id="education">
+        <i class="fas fa-graduation-cap section-watermark side-left" aria-hidden="true"></i>
         <div class="wrap">
             <div class="section-head reveal">
-                <h2>About</h2>
+                <span class="icon-seal"><i class="fas fa-graduation-cap"></i></span>
+                <h2>Education</h2>
             </div>
-            <div class="about-grid reveal">
-                <p>
-                    I'm a third-year Computer Science student at Carleton University, in the Artificial Intelligence
-                    and Machine Learning stream, expecting to graduate in April 2028. I've spent the last few years
-                    moving between founding a healthcare startup, interning at a fast-growing SaaS company, and
-                    freelancing — I like projects where I own a problem end to end, from architecture to the last
-                    bug fix.
-                </p>
-                <div class="stats">
-                    <div class="stat">
-                        <span class="stat-num">10.83</span>
-                        <span class="stat-label">/12 CGPA</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-num">3+</span>
-                        <span class="stat-label">Years experience</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-num">10+</span>
-                        <span class="stat-label">Projects built</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="edu-card reveal" style="margin-top: 40px;">
+            <div class="edu-card reveal">
                 <div class="edu-head">
                     <h3>Bachelor of Computer Science Honours</h3>
-                    <span class="edu-date mono">Expected Apr 2028</span>
+                    <span class="edu-date mono">Expected April 2028</span>
                 </div>
-                <p class="edu-org">Carleton University — Artificial Intelligence &amp; Machine Learning stream</p>
-                <div class="tag-row">
-                    <span class="tag">E.W.R. Steacie Scholar Award</span>
-                    <span class="tag">Lester B. Pearson Award</span>
-                    <span class="tag">President's Scholar</span>
-                </div>
-            </div>
-
-            <div class="skills-groups reveal" style="margin-top: 40px;">
-                <div class="skills-row">
-                    <span class="cat">Languages</span>
-                    <span class="pill">Java</span><span class="pill">Python</span><span class="pill">C++</span>
-                    <span class="pill">C</span><span class="pill">JavaScript</span><span class="pill">TypeScript</span>
-                    <span class="pill">PHP</span><span class="pill">Swift</span>
-                </div>
-                <div class="skills-row">
-                    <span class="cat">Frontend</span>
-                    <span class="pill">React</span><span class="pill">Vue</span><span class="pill">HTML/CSS</span>
-                    <span class="pill">Tailwind</span>
-                </div>
-                <div class="skills-row">
-                    <span class="cat">Backend</span>
-                    <span class="pill">Node.js</span><span class="pill">Laravel</span><span class="pill">FastAPI</span>
-                </div>
-                <div class="skills-row">
-                    <span class="cat">Cloud & tools</span>
-                    <span class="pill">AWS</span><span class="pill">Docker</span><span class="pill">Firebase</span>
-                    <span class="pill">Cloudflare</span><span class="pill">SQL</span><span class="pill">Git</span>
-                    <span class="pill">Linux</span><span class="pill">Stripe</span>
+                <p class="edu-org">Carleton University — Artificial Intelligence &amp; Machine Learning Stream · Ottawa, Canada</p>
+                <p class="edu-cgpa"><b>CGPA:</b> 10.83/12</p>
+                <div class="skills-groups" style="margin-top: 20px;">
+                    <div class="skills-row">
+                        <span class="cat">Coursework</span>
+                        <div class="pills">
+                            <span class="pill">Data Structures &amp; Algorithms</span>
+                            <span class="pill">Operating Systems</span>
+                            <span class="pill">Computer Architecture</span>
+                            <span class="pill">Comparison of Learning Algorithms</span>
+                            <span class="pill">Computational Theory</span>
+                            <span class="pill">Database Systems</span>
+                        </div>
+                    </div>
+                    <div class="skills-row">
+                        <span class="cat">Awards</span>
+                        <div class="pills">
+                            <span class="pill">E.W.R. Steacie Scholar Award</span>
+                            <span class="pill">Lester B. Pearson Award</span>
+                            <span class="pill">President's Scholar</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-
     <!-- Contact -->
     <section id="contact" class="contact-section" style="background: var(--bg-alt);">
+        <i class="fas fa-paper-plane section-watermark side-right" aria-hidden="true"></i>
         <div class="wrap-narrow">
             <div class="section-head reveal">
+                <span class="icon-seal"><i class="fas fa-paper-plane"></i></span>
                 <h2>Get in touch</h2>
             </div>
             <p class="lead reveal">
-                I'm open to new grad roles, internships, and interesting freelance work. The fastest way to reach
-                me is email.
+                I'm open to internships and interesting freelance work. The fastest way to reach me is email.
             </p>
             <div class="contact-actions reveal">
                 <a href="mailto:kassemtaha06@gmail.com" class="btn btn-primary">
